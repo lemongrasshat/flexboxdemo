@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Demo</title>
+    <meta name="robot" content="NOFOFLLOW,NOINDEX">
+    <link rel="stylesheet" href="/flexbox.css">
+</head>
+
+<body>
+    <div class="flex-input-holder">
+        <div class="dropdown-menu">
+            <label for="jcontent">Justify-content </label>
+            <select name="justify-content" id="jcontent">
+                <option value="start" selected>Start</option>
+                <option value="center">Center</option>
+                <option value="end">End</option>
+                <option value="space-between">Space-Between</option>
+                <option value="space-around">Space-around</option>
+                <option value="space-evenly">Space Evenly</option>
+                <option value="flex-start">Flex-Start</option>
+                <option value="flex-end">Flex-end</option>
+                <option value="stretch">Stretch</option>
+                <option value="left">left</option>
+                <option value="right">right</option>
+                <option value="safe center"> safe center overflow</option>
+                <option value="unsafe center"> unsafe center overflow</option>
+            </select>
+        </div>
+        <div class="dropdown-menu">
+            <label for="aitems"> Align Item</label>
+            <select name="align-item" id="aitems" >
+                <option value="start" selected>Start</option>
+                <option value="end">End</option>
+                <option value="center">Center</option>
+                <option value="flex-start">Flex-Start</option>
+                <option value="flex-end">Flex-end</option>
+                <option value="stretch">Stretch</option>
+                <option value="safe center"> safe center overflow</option>
+                <option value="unsafe center"> unsafe center overflow</option>
+            </select>
+        </div>
+        <div class="dropdown-menu">
+            <label for="fdir"> flex-direction </label>
+            <select name="flex-direction" id="fdir">
+                <option value="row" selected>row</option>
+                <option value="row-reverse">row-reverse</option>
+                <option value="column">column</option>
+                <option value="column-reverse">column-reverse</option>
+            </select>
+        </div>
+        <div class="flex-button-holder">
+            <button id="addItem">Add item to flexbox</button>
+        </div>
+    </div>
+    <div class="big-container">
+        <div class="flex-container">
+        
+        </div>
+    </div>
+    
+
+    <script src="flex.js"></script>
+</body>
+
+</html>
