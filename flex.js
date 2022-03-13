@@ -3,7 +3,7 @@ let justifyContentValue=document.querySelector("#jcontent");
 let alignItemsValue=document.querySelector("#aitems");
 
 let flexDirectionValue=document.querySelector("#fdir");
-
+let i=1;
 let classToBeEdited="flex-container";
 const addButton=document.querySelector("#addItem");
 let addButtonEventHandler=()=>
@@ -12,11 +12,12 @@ let addButtonEventHandler=()=>
     let divClass=document.createElement("div");
     divClass.classList.add("item");
     let pTag=document.createElement("p");
-    let text=document.createTextNode("my item");
+    let text=document.createTextNode(`item ${i}`);
     pTag.appendChild(text);
     divClass.appendChild(pTag);
     let containerClass=document.querySelector(".flex-container");
     containerClass.appendChild(divClass);
+        i++;
     }
 }
 
